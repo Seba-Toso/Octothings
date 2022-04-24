@@ -17,7 +17,7 @@ const Portfolio = ({ data }) => {
   const { nodes: projectsContent } = data.allContentfulPortfolio;
 
   const orderedPortfolios = portfolioContent
-    .filter((portfolio) => portfolio.newName !== 'Octosoft')
+    .filter((portfolio) => portfolio.newName !== 'Octothings')
     .sort((a, b) => a.newOrder - b.newOrder);
 
   return (

@@ -65,7 +65,7 @@ const OurServices = (props) => {
     (data) => data.title === 'Our Services',
   );
   const serviceData = transformData(allContentfulService.edges)
-    .filter((data) => data.title !== 'Octosoft')
+    .filter((data) => data.title !== 'Octothings')
     .sort((a, b) => {
       return a.newOrder - b.newOrder;
     });
